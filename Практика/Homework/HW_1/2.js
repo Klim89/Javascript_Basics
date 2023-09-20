@@ -7,8 +7,6 @@
 Вывести значение переменной admin в консоль.
 */
 
-"use strict";
-
 const firstName = "Dmitriy";
 const admin = firstName;
 console.log(admin);

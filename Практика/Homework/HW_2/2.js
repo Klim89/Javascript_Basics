@@ -12,4 +12,4 @@ const test = confirm("У вас много денег?");
 //   console.log("До свидания.");
 // }
 
-console.log(test === true ? "Скоро будем у вас ;)" : "До свидания.");
+console.log(test == true ? "Скоро будем у вас ;)" : "До свидания.");

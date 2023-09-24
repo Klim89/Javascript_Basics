@@ -28,9 +28,9 @@ digitOfNumber(userNumber);
 
 function digitOfNumber(number) {
   const hundredsNumber = Math.trunc((number / 100) % 10);
-  const tensNumber = Math.trunc((number % 100) / 10);
+  const tensNumber = Math.trunc((number / 10) % 10);
   const unitsNumber = number % 10;
-  
+
   console.log(
     `В числе ${number} количество сотен: ${hundredsNumber},\
  десятков: ${tensNumber}, единиц: ${unitsNumber}`

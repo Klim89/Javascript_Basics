@@ -27,8 +27,7 @@ function getDecadeMonth() {
   } else if (dayNumber > 20 && dayNumber < 32) {
     console.log(`Число ${dayNumber} попадает в 3 декаду месяца.`);
     return;
-  } else {
-    console.log("Неверное значение");
   }
+  console.log("Неверное значение");
   getDecadeMonth();
 }

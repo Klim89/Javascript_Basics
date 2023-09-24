@@ -14,4 +14,21 @@
 число 32.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+getDecadeMonth();
+
+function getDecadeMonth() {
+  let dayNumber = +prompt("Введите число от 1 до 32, не включая число 32: ");
+  if (dayNumber >= 1 && dayNumber <= 10) {
+    console.log(`Число ${dayNumber} попадает в 1 декаду месяца.`);
+    return;
+  } else if (dayNumber > 10 && dayNumber <= 20) {
+    console.log(`Число ${dayNumber} попадает в 2 декаду месяца.`);
+    return;
+  } else if (dayNumber > 20 && dayNumber < 32) {
+    console.log(`Число ${dayNumber} попадает в 3 декаду месяца.`);
+    return;
+  } else {
+    console.log("Неверное значение");
+  }
+  getDecadeMonth();
+}

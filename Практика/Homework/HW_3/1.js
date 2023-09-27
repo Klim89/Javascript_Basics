@@ -6,5 +6,7 @@
 Необходимо продемонстрировать вызов данной функции, с выводом результата, 
 который получаем от функции, в консоль.
 */
+const userNumber = +prompt("Введите число:");
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const getSquareNumber = (userNumber) => userNumber ** 3;
+console.log(getSquareNumber(userNumber));

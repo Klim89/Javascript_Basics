@@ -11,18 +11,17 @@
 
 const userSalary = +prompt("Введите число:");
 
-if (Number.isFinite(userSalary) && userSalary !== 0) {
+if (Number.isFinite(userSalary) && userSalary !== 0 && userSalary > 0) {
   netSalary(userSalary);
 } else {
   console.log("Значение задано неверно");
 }
 
 /**
- * Вычисляет размер заработной платы после вычета налогов.
+ * Вычисляет размер заработной платы после вычета налогов и выводит сообщение в консоль.
  * @param {number} salary - Зарплата до вычета налогов.
  * @returns {void}
  */
-
 function netSalary(salary) {
   const taxRate = 0.13;
   salary = salary - salary * taxRate;

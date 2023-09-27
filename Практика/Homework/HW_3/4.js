@@ -24,7 +24,6 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
  * @param {number} b - Второе число.
  * @return {number} Сумма чисел.
  */
-
 function sum(a, b) {
   return a + b;
 }
@@ -35,7 +34,6 @@ function sum(a, b) {
  * @param {number} b - Второе число.
  * @return {number} Проиведение чисел.
  */
-
 function prod(a, b) {
   return a * b;
 }
@@ -46,7 +44,6 @@ function prod(a, b) {
  * @param {number} b - Второе число.
  * @return {number} Частное чисел.
  */
-
 function div(a, b) {
   return a / b;
 }
@@ -57,7 +54,6 @@ function div(a, b) {
  * @param {number} b - Второе число.
  * @return {number} Разница чисел.
  */
-
 function diff(a, b) {
   if (a > b) {
     return a - b;

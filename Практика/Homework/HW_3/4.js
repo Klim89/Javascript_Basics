@@ -18,4 +18,56 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+/**
+ * Считает сумму переданных аргументов.
+ * @param {number} a - Первое число.
+ * @param {number} b - Второе число.
+ * @return {number} Сумма чисел.
+ */
+
+function sum(a, b) {
+  return a + b;
+}
+
+/**
+ * Считает произведение переданных аргументов.
+ * @param {number} a - Первое число.
+ * @param {number} b - Второе число.
+ * @return {number} Проиведение чисел.
+ */
+
+function prod(a, b) {
+  return a * b;
+}
+
+/**
+ * Считаем частное переданных аргументов.
+ * @param {number} a - Первое число.
+ * @param {number} b - Второе число.
+ * @return {number} Частное чисел.
+ */
+
+function div(a, b) {
+  return a / b;
+}
+
+/**
+ * Считает разницу переданных аргументов.
+ * @param {number} a - Первое число.
+ * @param {number} b - Второе число.
+ * @return {number} Разница чисел.
+ */
+
+function diff(a, b) {
+  if (a > b) {
+    return a - b;
+  }
+  return b - a;
+}
+
+console.log(sum(2, 6));
+console.log(prod(15, 10));
+console.log(div(12, 9).toFixed(2));
+console.log(diff(20, 13));
+console.log(diff(13, 20));
+console.log(diff(13, 13));

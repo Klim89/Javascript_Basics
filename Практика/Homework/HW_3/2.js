@@ -20,7 +20,7 @@ if (Number.isFinite(userSalary) && userSalary !== 0) {
 /**
  * Вычисляет размер заработной платы после вычета налогов.
  * @param {number} salary - Зарплата до вычета налогов.
- * @returns {number} - Размер заработной платы после вычета налогов.
+ * @returns {void}
  */
 
 function netSalary(salary) {

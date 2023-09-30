@@ -24,6 +24,6 @@ if (Number.isFinite(userSalary) && userSalary !== 0 && userSalary > 0) {
  */
 function netSalary(salary) {
   const taxRate = 0.13;
-  salary = salary - salary * taxRate;
-  console.log(`Размер заработной платы за вычетом налогов равен ${salary}`);
+  userSalary = salary - salary * taxRate;
+  console.log(`Размер заработной платы за вычетом налогов равен ${userSalary}`);
 }

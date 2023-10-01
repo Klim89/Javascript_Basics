@@ -55,3 +55,10 @@ console.log(
   `[${indexArray}] -  новый массив, содержащий индексы массива [${array}], 
   в которых значение равно 3.`
 );
+
+// Ищем индексы чисел, равных 3, с помощью метода map()
+const indexArray2 = array
+  .map((number, index) => (number === 3 ? index : -1))
+  .filter((index) => index !== -1);
+
+console.log("Индексы чисел, равных 3:", indexArray2);

@@ -54,6 +54,12 @@ for (let i = 0; i < arr1.length; i++) {
 }
 console.log(daysOfWeek);
 
+const week = {};
+for (let i = 0; i < arr1.length; i++) {
+  week[dayWeek[i]] = arr2[i];
+}
+console.log(week);
+
 const obj = { x: 1, y: 2, z: 3 };
 
 const obj2 = Object.values(obj).map((element) => element ** 2);
